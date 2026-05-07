@@ -26,4 +26,17 @@ public class User {
 
     @Column(nullable = false)
     private String password;
+
+    @Column(nullable = false, unique = true)
+    private String role;
+
+    @Column(nullable = false, unique = true)
+    private String status;
+
+    @Column(nullable = false, unique = true)
+    private String createdAt;
+
+    @Column(nullable = false, unique = true)
+    private String updatedAt;
+
 }
